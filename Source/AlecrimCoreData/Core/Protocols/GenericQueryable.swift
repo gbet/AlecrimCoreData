@@ -9,11 +9,7 @@
 import Foundation
 
 public protocol GenericQueryable: Queryable {
-    
-    associatedtype Element = Self.Iterator.Element
-    
     func execute() -> [Self.Element]
-
 }
 
 // MARK: - ordering
