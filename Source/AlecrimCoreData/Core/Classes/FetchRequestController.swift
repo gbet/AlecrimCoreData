@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 /// A strongly typed `NSFetchedResultsController` wrapper.
-public final class FetchRequestController<T: NSManagedObject> {
+public class FetchRequestController<T: NSManagedObject> {
     
     /// The fetch request used to do the fetching.
     public let fetchRequest: NSFetchRequest<T>
