@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-internal final class FetchRequestControllerDelegate<T: NSManagedObject>: NSObject, NSFetchedResultsControllerDelegate {
+internal class FetchRequestControllerDelegate<T: NSManagedObject>: NSObject, NSFetchedResultsControllerDelegate {
     
     fileprivate var needsReloadDataClosure: (() -> Void)?
     

@@ -74,7 +74,7 @@ extension CoreDataQueryable {
         return self.aggregate(withFunctionName: "average", attribute: attribute)
     }
     
-    private final func aggregate<U>(withFunctionName functionName: String, attribute: Attribute<U>) -> U {
+    private func aggregate<U>(withFunctionName functionName: String, attribute: Attribute<U>) -> U {
         let attributeDescription = self.entityDescription.attributesByName[attribute.___name]!
         
         let keyPathExpression = NSExpression(forKeyPath: attribute.___name)

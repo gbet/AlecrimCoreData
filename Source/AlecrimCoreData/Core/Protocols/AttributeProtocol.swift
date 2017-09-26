@@ -73,7 +73,7 @@ extension AttributeProtocol {
 
 extension AttributeProtocol {
 
-    internal final var ___comparisonPredicateOptions: NSComparisonPredicate.Options {
+    internal var ___comparisonPredicateOptions: NSComparisonPredicate.Options {
         if Self.ValueType.self is AlecrimCoreData.StringProtocol.Type {
             return PersistentContainerOptions.defaultComparisonPredicateOptions
         }
